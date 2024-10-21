@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overallbox{
+    max-width: 100%;
+    min-height:100%;
+    background-color: black;
+}
+
+/* <!---div1-nav---> */
+
+.navbar{
+    max-width: 100%;
+    height: 10vh;
+    background-color:whitesmoke;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.navbar span{
+    color: red;
+}
+.navbar h1{
+    font-size: 40px;
+    position: relative;
+    top:0px;
+    transition: all 0.3s;
+    animation-name: h1;
+    animation-duration: 2s;
+    right:100px;
+}
+.navbar div {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    bottom: 0px;
+    transition: all 0.3s;
+    animation-duration: 2s;
+    animation-name: div;
+}
+.navbar div a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.navbar div a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: -6px;
+    background-color: red;
+    position:absolute;
+    left: 0px;
+    transition: 0.9s;
+}
+.navbar div a:hover::after{
+    width: 100%;
+}
+
+/* <!----navbar keyfram--> */
+
+@keyframes h1{
+    from{
+        top: -50px;
+    }
+    to{
+        top: 0px;
+    }
+}
+@keyframes div{
+    from{
+        bottom: -50px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+
+/* <!---firstdiv--content--and--image----> */
+
+.firstdiv{
+    max-width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+.firstdiv div{
+    position: relative;
+    transition: all 0.2s;
+    animation-duration: 3s;
+    animation-name: div1;
+    left: 30px;
+}
+.firstdiv div h2{
+    color: white;
+    font-size: 35px;
+}
+.firstdiv div h1{
+    color: white;
+    font-size: 45px;
+}
+.firstdiv div h1 span{
+    color: yellow;
+    border-bottom: 2px solid;
+}
+.firstdiv img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    transition: all 0.2s;
+    animation-duration: 3s;
+    animation-name: img;
+    right: 3px;
+}
+.firstdiv div p{
+    color: lightgray;
+    font-size: larger;
+    margin-top: 20px;
+}
+.firstdiv div button{
+    width: 130px;
+    height: 5vh;
+    background-image: linear-gradient(to right,yellow,orange);
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.firstdiv div button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* <!---firstdiv--content--and--image--keyfram--> */
+
+@keyframes div1{
+    from{
+        left: -30%;
+    }
+    to{
+        left: 30px;
+    }
+}
+@keyframes img{
+    from{
+        right: -50%;
+    }
+    to{
+        right: 3px;
+    }
+}
+
+/* <!----skillsdiv---skills----> */
+
+.skills{
+    max-width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    animation: skills 5s linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+.skills h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.skills p{
+    text-align: center;
+    color: lightgray;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.skills div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    column-gap: 40px;
+}
+.one{
+    width: 500px;
+    height: 300px;
+    border: 3px solid violet;
+    border-radius: 10px;
+}
+.one h1{
+    margin-top: 10px;
+    height: 6vh;
+}
+.one div {
+    margin: -20px;
+    height: 150px;
+}
+.one button{
+    color: white;
+}
+.bu1{
+    width: 100px;
+    height: 6vh;
+    border: 2px solid violet;
+    background: transparent;
+    border-radius: 10px;
+}
+.bu2{
+    width: 80px;
+    height: 6vh;
+    border: 2px solid violet;
+    background: transparent;
+    border-radius: 10px;
+}
+.bu3{
+    width: 130px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid violet;
+    background: transparent;
+    border-radius: 10px;
+}
+.bu4{
+    width: 150px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid violet;
+    background: transparent;
+    border-radius: 10px;
+}
+.bu5{
+    width: 100px;
+    height: 6vh;
+    border: 2px solid violet;
+    background: transparent;
+    border-radius: 10px;
+}
+.b1{
+    width: 80px;
+    height: 6vh;
+    border: 2px solid violet;
+    border-radius: 10px;
+    background: transparent;
+}
+.b2{
+    width: 100px;
+    height: 6vh;
+    border: 2px solid violet;
+    border-radius: 10px;
+    background: transparent;
+}
+.b3{
+    width: 120px;
+    height: 6vh;
+    border: 2px solid violet;
+    border-radius: 10px;
+    background: transparent;
+}
+.b3 img{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.b4{
+    width: 120px;
+    height: 6vh;
+    border: 2px solid violet;
+    border-radius: 10px;
+    background: transparent;
+}
+.b5{
+    width: 120px;
+    height: 6vh;
+    border: 2px solid violet;
+    border-radius: 10px;
+    background: transparent;
+}
+
+/* <!----skills---div---keyfrem-----> */
+
+@keyframes skills{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        /* clip-path: inset(100% 100% 0 0 ); */
+    }
+    to{
+        opacity: 1;
+        scale: 0.1s;
+        /* clip-path: inset(0 0 0 0 ); */
+    }
+}
+
+/* <!---project--div---> */
+
+.project{
+    max-width: 100%;
+    min-height: 600px;
+    padding: 20px;
+}
+.project h1{
+    color: white;
+    text-align: center;
+}
+.p1{
+    color: lightgray;
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+}
+.menubox{
+    width: 37%;
+    height: 7vh;
+    border:3px solid violet;
+    margin: auto;
+    margin-top:20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+#imgg{
+    padding:20px;
+}
+.menubox div{
+    width: 170px;
+    height:42px;
+    border-right: 2px solid violet;
+    padding: 10px;
+    text-align: center;
+}
+.menubox div a{
+    color: white;
+    text-decoration: none;
+}
+.projectimg{
+    max-width: 100%;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.imgbox{
+    width: 350px;
+    height:490px;
+    background-color:white;
+    border-radius: 10px;
+    padding:5px;
+}
+.imgbox img{
+    width: 340px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imgbox button{
+    width: 70px;
+    height: 4vh;
+    color: black;
+    border: 2px solid #213a57;
+    background-color:transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.imgbox h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.imgbox p{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+#click{
+    width: 100px;
+    height: 5vh;
+    background-color: black;
+}
+#click a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.contact-me-div{
+    text-align: center;
+    /* margin-top: 150px; */
+    padding-top: 100px;
+}
+/* font-contact */
+.font-contact{
+    font-size: 18px;
+}
+.font-contact-1{
+    font-size: 30px;
+    padding: 20px;
+}
+/* contact-input */
+.contact-input{
+    margin-top: 50px;
+}
+.contact-input input{
+    margin-left: 30px;
+    padding: 10px 20px;
+    width: 30%;
+    outline: none;
+}
+.text-area{
+    margin-top: 20px;
+}
+.text-area textarea{
+    outline: none;
+    padding-top: 10px;
+    width: 70%;
+    height: 200px;
+}
+/* contact-btn */
+.contact-btn {
+    margin-top: 30px;
+    color:white;
+}
+.contact-btn button{
+    padding: 10px 20px;
+    border: none;
+    border-radius:30px;
+    background-color:black;
+    font-size: 18px;
+    color: white;
+    border:2px solid white;
+}
+.contact-btn button i{
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    padding:50px;
+    color:white;
+}
+.font-footer{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact-me-div{
+    color:white;
+}
+/* link-bar */
+
+.link-bar{
+    display: none;
+}
+/* link-bar-a */
+.link-bar-a{
+    width: 100%;
+}
+.link-bar-a{
+    display: none;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(107, 107, 107);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 10px;
+}
+.link-bar-a ul li{
+    
+    list-style: none;
+    margin: 4px;
+    padding: 8px;
+}
+.link-bar-a a{
+    text-decoration: none;
+    color: white;
+}
+.link-bar-a ul li:hover{
+    border-radius: 30px;
+    background-color: rgb(62, 59, 233);
+}
